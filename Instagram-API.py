@@ -42,7 +42,7 @@ for username in usernames:
     try:
         cl.follow(account_to_follow)  # Follow the specified account
         print(f"Followed {account_to_follow} on behalf of {username}")
-        time.sleep(2)  # Add a delay to avoid rate limiting
+        time.sleep(5)  # Add a delay to avoid rate limiting
     except Exception as e:
         logging.error(f"Error following {account_to_follow} on behalf of {username}: {e}")
         print(f"Error following {account_to_follow} on behalf of {username}: {e}")
